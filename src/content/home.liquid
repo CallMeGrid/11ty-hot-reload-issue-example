@@ -1,0 +1,13 @@
+---
+eleventyComputed: {
+  permalink: "{{ locale | localizationUrl }}",
+  title: "Test",
+  description: "Test",
+}
+home: true
+---
+<div class="simulator">
+  <div class="simulator-container">
+    <h2>{{ 'hello' | i18n: page }}</h2>
+  </div>
+</div>

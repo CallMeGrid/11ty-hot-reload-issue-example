@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="{{ locale }}" dir="ltr" rel="alternate" prefix="og: http://ogp.me/ns#">
+
+<head>
+  {%- include meta -%}
+  {%- include css -%}
+  {%- include analytics -%}
+  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+</head>
+
+<body>
+  {{ content }}
+  {%- include i18n-modal -%}
+  <footer>
+    {%- include footer-copyright -%}
+  </footer>
+  {%- include js -%}
+</body>
+
+</html>

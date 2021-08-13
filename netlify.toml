@@ -1,0 +1,8 @@
+# Custom Build Processes
+# https://docs.netlify.com/configure-builds/file-based-configuration/
+
+# Default build command and publish dir
+# are set in Netlify deploy settings
+
+[context.master]
+  command = "NODE_ENV=production npm run build"

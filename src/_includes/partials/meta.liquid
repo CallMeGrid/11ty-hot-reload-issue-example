@@ -1,0 +1,16 @@
+<meta charset="utf-8">
+<title>{{ title }}{%- unless home %} | Test{%- endunless -%}</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="shortcut icon" href="{{ dir.base }}favicon.png" type="image/png" />
+<meta name="description" content="{{ description }}">
+<link rel="canonical" href="{{ url.base }}{{ page.url }}" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="{{ url.base }}{{ page.url }}" />
+<meta property="og:site_name" content="test" />
+<meta property="og:title" content="{{ title }}" />
+<meta property="og:description" content="{{ description }}" />
+<meta property="og:image" content="{{ url.base }}{{ dir.img }}{{ og_img }}" />
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{{ title }}" />
+<meta name="twitter:description" content="{{ description }}" />
+<meta name="twitter:image" content="{{ url.base }}{{ dir.img }}{{ og_img }}" />

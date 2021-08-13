@@ -1,0 +1,15 @@
+# Build results
+dist
+src/_includes/partials/css.liquid
+src/_includes/partials/js.liquid
+
+# Package managers
+node_modules
+.npm
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*

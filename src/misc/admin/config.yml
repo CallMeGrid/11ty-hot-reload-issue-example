@@ -1,0 +1,41 @@
+backend:
+  name: git-gateway
+  branch: develop
+
+media_folder: src/content/cms/img
+public_folder: assets/img
+
+collections:
+  - name: "news"
+    label: "News"
+    folder: "src/content/cms/news/entries"
+    create: true
+    identifier_field: title
+    editor:
+     preview: false
+    fields:
+    - { label: "Title", name: "title", widget: "string" }
+    - { label: "Slug", name: "slug", widget: "string" }
+    - { label: "Featured Image", name: "image", widget: "image", hint: "Must be 1200 x 630 pixels. This image is used when this is shared on social media." }
+    - { label: "Thumbnail Image", name: "thumbnail", widget: "image", hint: "Must be 720 x 378 pixels" }
+    - { label: "Excerpt", name: "excerpt", widget: "text" }
+    - { label: "Body", name: "body", widget: "markdown" }
+    - { label: "Publish Date", name: "date", widget: "datetime" }
+    - { label: "Layout", name: "layout", widget: "hidden", default: "news-article.liquid"}
+    - { label: "Tags", name: "tags", widget: "hidden", default: "news"}
+  - name: "incident-history"
+    label: "Incident History"
+    folder: "src/content/cms/incident-history/entries"
+    create: true
+    identifier_field: title
+    editor:
+     preview: false
+    fields:
+    - { label: "Title", name: "title", widget: "string" }
+    - { label: "Slug", name: "slug", widget: "string" }
+    - { label: "Reporter", name: "reporter", widget: "string" }
+    - { label: "Excerpt", name: "excerpt", widget: "text" }
+    - { label: "Body", name: "body", widget: "markdown" }
+    - { label: "Publish Date", name: "date", widget: "datetime" }
+    - { label: "Layout", name: "layout", widget: "hidden", default: "cms-incident-history.liquid"}
+    - { label: "Tags", name: "tags", widget: "hidden", default: "incident-history"}

@@ -1,0 +1,9 @@
+<div class="footerCopyright">
+  <div class="footerCopyright-container">
+    <a role="button" class="btn footerCopyright-btn" data-modal-open="i18n">
+      {%- if locale == 'en' -%}{{ 'english' | i18n: page }}{%- endif -%}
+      {%- if locale == 'es' -%}{{ 'spanish' | i18n: page }}{%- endif -%}
+      {%- if locale == 'zh' -%}{{ 'chinese' | i18n: page }}{%- endif -%}
+    </a>
+  </div>
+</div>

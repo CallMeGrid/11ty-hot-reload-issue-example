@@ -1,0 +1,8 @@
+{%- comment -%} Extracted code because of pre whitespace {%- endcomment -%}
+<span class="comment">// {{ 'authToken.comments[0]' | i18n: page }}</span>
+<span class="obj">const</span> authenticationToken = <span class="obj">await</span>
+  manager.requestAuthenticationToken('<span class="string">My name</span>');
+
+<span class="comment">// {{ 'authToken.comments[1]' | i18n: page }}</span>
+<span class="obj">curl</span> -d 'name=My name'
+  ""
